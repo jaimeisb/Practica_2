@@ -8,15 +8,15 @@ import javax.swing.JOptionPane;
 public class matriz {
 //	int matriz[][]=new int [3][8];
 	
-
-	static int torres1,t1;{
+	//VentanaJuego ventana = new VentanaJuego();
+	static int t1=8;
 		String torres = JOptionPane.showInputDialog("Ingrese el numero de discos con los que desea jugar: ");
-		int t= Integer.parseInt(torres);
-		t1=t;
-		VentanaJuego ventana = new VentanaJuego();
+		int t= Integer.parseInt(torres);{
+		t1=t;}
+		
 	Scanner s= new Scanner(System.in);
 		
-	Stack torre1= new Stack();{
+	 static Stack torre1= new Stack();{
 		if(t==3){
 		torre1.push(juego.tres);
 		torre1.push(juego.dos);
@@ -65,7 +65,7 @@ public class matriz {
 			torre1.push(juego.uno);
 		}
 	}
-	}
+	
 	
 
 
